@@ -1,0 +1,123 @@
+/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background: rgb(225, 195, 230);
+    behavior: smooth;
+}
+
+/* #Eyes{
+    animation: Eyes 1s ease-in ;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes Eyes {
+    from{
+        transform: rotateZ(120deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+} */
+
+
+
+#Eye{
+    animation: Eye 1.5s ease-in  ;
+    transform-origin:right;
+    transform-box: fill-box;
+
+    
+    animation-delay: 3s;
+
+}
+
+@keyframes Eye {
+    from{
+        transform: rotateZ(-50deg);
+    }
+    to{
+        transform: rotateZ(200deg);
+    }
+}
+
+#Music{
+    animation: music 2s linear infinite ;
+    transform-origin:top;
+    /* transform-box: fill-box; */
+}
+
+@keyframes music {
+    from{
+        /* transform: rotateZ(0deg); */
+        transform: translateY(40px);
+        
+    }
+    to{
+        /* transform: rotateZ(10deg); */
+        transform: translateY(-80px);
+    }
+}
+
+#first-grass{
+    animation: first 0.8s linear infinite ;
+    transform-origin:top;
+    /* transform-box: fill-box; */
+}
+
+@keyframes first {
+    from{
+        /* transform: rotateZ(0deg); */
+        transform: translateY(10px);
+        
+    }
+    to{
+        /* transform: rotateZ(10deg); */
+        transform: translateY(0px);
+    }
+}
+
+#second-grass{
+    animation: second 0.8s linear infinite ;
+    transform-origin:bottom;
+    /* transform-box: fill-box; */
+}
+
+@keyframes second {
+    from{
+        /* transform: rotateZ(0deg); */
+        transform: translateY(0px);
+        
+    }
+    to{
+        /* transform: rotateZ(10deg); */
+        transform: translateY(10px);
+    }
+}
+
+#Vector_2{
+    animation: ball 1s ease-in-out infinite ;
+    transform-origin:center;
+    transform-box: fill-box;
+}
+
+@keyframes ball {
+    from{
+        /* transform: rotateZ(3deg); */
+        transform: scale(0.9);
+        
+    }
+    to{
+        /* transform: rotateZ(-3deg); */
+        transform: scale(1);
+    }
+}
